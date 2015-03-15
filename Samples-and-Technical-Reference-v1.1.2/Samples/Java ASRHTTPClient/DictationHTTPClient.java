@@ -99,8 +99,8 @@ public class DictationHTTPClient {
 	 *
 	 *********************************************************************************************************
 	 */
-	private String APP_ID = "Insert Your App Id";
-	private String APP_KEY = "Insert Your 128-Byte App Key";
+	private String APP_ID = "NMDPTRIAL_saifmahamood20150314212020";
+	private String APP_KEY = "d120948bd9ca2264ead629fc1de26af36e512b54e7287cb7a4de4e2b78ed35490ecad4e794f64b7ecc757bea57e5ddc53609191d3196d4d5742300ec1035361e";
 	private String DEVICE_ID = "0000";
 	private String LANGUAGE = "en_US";
 	private String CODEC = "audio/x-wav;codec=pcm;bit=16;rate=16000";	//MP3
