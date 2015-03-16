@@ -5,7 +5,6 @@ import os, sys, wave, requests, time, csv,codecs,cStringIO
 from sys import stdout
 from core import NDEVRequest, NDEVResponse, _get_language_input, red, green
 from time import sleep
-import arabic_reshaper
 from bidi.algorithm import get_display
 class ASR(object):
 	
@@ -505,9 +504,9 @@ class ASRResponse(NDEVResponse):
 		#print(self.results[1])
 		#print(self.results[2])
 		print(self.results[3])
-		with open('test.csv', 'wb') as fout:
-			writer = UnicodeWriter(fout, quoting = csv.QUOTE_ALL)
-			writer.writerow(self.results[0])
+		#with open('test.csv', 'wb') as fout:
+		#	writer = UnicodeWriter(fout, quoting = csv.QUOTE_ALL)
+		#	writer.writerow(self.results[0])
 		#b = open('test.csv', 'w')
 		#a = csv.writer(b)
 		#a.writerows(self.results)
@@ -519,8 +518,8 @@ class ASRResponse(NDEVResponse):
 			ret += c
 			#print(i,c)
 		print ret
-		reshaped_text = arabic_reshaper.reshape(ret)
-		bidi_text = get_display(reshaped_text)
+		#reshaped_text = arabic_reshaper.reshape(ret)
+		bidi_text = get_display(ret)
 		pass_arabic_text_to_render(bidi_text)
 		"""
 		b = open('test.csv', 'w')
