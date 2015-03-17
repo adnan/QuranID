@@ -65,8 +65,10 @@ def SCAN_SUPERJOKERS( query ):
 	TODO that's a quick fix, the problem of superjokers must be fixed in 
 			the query parser or by time delay 
 	"""
+	print(query)
 	myreg = re.compile( "\*+|[\؟\?]{2,9}|[ \t\n\r\(\)\+\-\|]+|[^ ]+:|" )
 	filtred_query = myreg.sub( "", query )
+	print(filtred_query)
 	super_joker = True if ( len( filtred_query ) < 3 and "*" in query ) \
 						or ( len( filtred_query ) < 2 and ( u"?" in query or u"؟" in query ) ) \
 						or query.count( "*" ) > 2 \
