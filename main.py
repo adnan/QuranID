@@ -75,8 +75,10 @@ if __name__ == "__main__":
 			                   "recitation": 1
 	            			}
 	         results = RAWoutput.do(search_flags)
-	         print(results["search"]["ayas"][1]["aya"]["id"])
+	         print(results["search"]["ayas"][1]["sura"]["name"])
 	         print(results["search"]["ayas"][1]["sura"]["id"])
+	         print("verse" , results["search"]["ayas"][1]["aya"]["id"])
+	         
 	           	    
 		    
         else:

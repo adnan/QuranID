@@ -52,7 +52,8 @@ search_flags = {
 
 results = RAWoutput.do( search_flags )
 
-print(results["search"]["translation_info"])
+print(results["search"]["ayas"][1]["sura"]["name"])
+print(results["search"]["ayas"][1]["aya"]["translation"])
 print "runtime", results["search"]["runtime"]
 print "total", results["search"]["interval"]["total"]
 print(results["search"]["ayas"][1]["aya"]["id"])
