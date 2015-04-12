@@ -143,7 +143,7 @@ class Raw():
 			      "range":10, # used as "perpage" in paging mode
 			      "page":1, # overridden with offset
 			      "perpage":10, # overridden with range
-			      "fuzzy":False,
+			      "fuzzy":True,
 			      "aya": True,
 		       }
 		  }
